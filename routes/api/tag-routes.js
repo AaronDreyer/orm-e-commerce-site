@@ -38,7 +38,7 @@ router.post('/', async (req, res) => {
   // create a new tag
   try {
     const tagData = await Tag.create({
-      tag_id: req.body.product_tag,
+      tag_id: req.body.tag_id,
   });
     res.status(200).json(tagData);
   } catch (err) {
@@ -75,7 +75,7 @@ router.delete('/:id', async (req, res) => {
     });
 
     if (!tagData) {
-      res.status(404).json({ message: 'No category found with that id!' });
+      res.status(404).json({ message: 'No tag found with that id!' });
       return;
     }
     res.status(200).json(tagData);
