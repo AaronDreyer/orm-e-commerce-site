@@ -14,6 +14,7 @@ Category.hasMany(Product, {
   foreignKey: 'category_id',
 });
 
+// Products and Tags are linked by through and display in insomnia together
 // Products belongToMany Tags (through ProductTag)
 Product.belongsToMany(Tag, {
   through: ProductTag,

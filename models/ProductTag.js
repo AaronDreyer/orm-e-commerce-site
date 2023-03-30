@@ -4,6 +4,7 @@ const sequelize = require('../config/connection');
 
 class ProductTag extends Model {}
 
+// Connects Products and Tags to display within each other through route requests
 ProductTag.init(
   {
     id: {
@@ -37,25 +38,3 @@ ProductTag.init(
 module.exports = ProductTag;
 
 ProductTag
-
-    // id
-
-// Integer
-
-// Doesn't allow null values
-
-// Set as primary key
-
-// Uses auto increment
-
-    // product_id
-
-// Integer
-
-// References the product model's id
-
-    // tag_id
-
-// Integer
-
-// References the tag model's id

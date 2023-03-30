@@ -6,6 +6,7 @@ class Tag extends Model {}
 
 Tag.init(
   {
+    // Presents as id and tag_name with accosiated products
     id: {
       type: DataTypes.INTEGER,
       allowNull: false,
@@ -26,19 +27,3 @@ Tag.init(
 );
 
 module.exports = Tag;
-
-// Tag
-
-    // id
-
-// Integer
-
-// Doesn't allow null values
-
-// Set as primary key
-
-// Uses auto increment
-
-    // tag_name
-
-// String

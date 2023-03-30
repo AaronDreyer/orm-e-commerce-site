@@ -2,8 +2,9 @@ const router = require('express').Router();
 const { Product, Category, Tag, ProductTag } = require('../../models');
 
 // The `/api/products` endpoint
+// RESTFUL Routes
 
-// get all products
+// GET Request for all Products
 router.get('/', async (req, res) => {
   // find all products
   // be sure to include its associated Category and Tag data
@@ -17,7 +18,7 @@ router.get('/', async (req, res) => {
   }
 });
 
-// get one product
+// GET Request for Products based on ID
 router.get('/:id', async (req, res) => {
   // find a single product by its `id`
   // be sure to include its associated Category and Tag data
@@ -36,7 +37,7 @@ router.get('/:id', async (req, res) => {
   }
 });
 
-// create new product
+// POST Request to create a Product
 router.post('/', async (req, res) => {
   /* req.body should look like this...
     {
@@ -73,7 +74,9 @@ router.post('/', async (req, res) => {
   }
 });
 
-// update product
+// PUT Request to update a product
+// This was already written as part of the starter code
+// I attempted to refactor it to be like my other RESTFUL Route code by I failed to do so so it stayed as written
 router.put('/:id', (req, res) => {
   // update product data
   Product.update(req.body, {
@@ -115,6 +118,7 @@ router.put('/:id', (req, res) => {
     });
 });
 
+// DELETE Request to delete Products
 router.delete('/:id', async (req, res) => {
   // delete one product by its `id` value
   try {
