@@ -38,7 +38,7 @@ router.post('/', async (req, res) => {
   // create a new category
   try {
     const categoryData = await Category.create({
-      product_id: req.body.product_id,
+      category_name: req.body.category_name,
     });
     res.status(200).json(categoryData);
   } catch (err) {
@@ -51,7 +51,7 @@ router.put('/:id', async (req, res) => {
   try {
     const updatedCategory = await Category.update(
       {
-        title: req.body.title,
+        category_name: req.body.category_name,
       },
       {
         where: {
