@@ -7,6 +7,7 @@
   * [Description](#description)
   * [Installation](#installation)
   * [Usage](#usage)
+  * [Walkthrough Video](#walkthrough-video)
   * [Credits](#credits)
   * [Tests](#tests)
   * [Questions](#questions)
@@ -26,12 +27,15 @@
   ## [Usage](#table-of-contents)
 
   In order to operate this challenge, the user needs to npm intsall all applications associated with the challenge. Once this is done, the user must update the env file to include their password used for mysql. Once this is complete, the user can npm start to activate the program and use a back end viewer such as insomnia to view its contents.
+
+   ## [Walkthrough Video](#table-of-contents)
+
+  ![Walkthrough Video](./assets/www.youtube.com_watch_v%3DJIQft76RWDA.png)(https://youtu.be/JIQft76RWDA)
   
   ## [Credits](#table-of-contents)
 
   No contributions are needed for this challenge.
 
-  
   ## [License](#table-of-contents)
 
   This application is under the following license:
